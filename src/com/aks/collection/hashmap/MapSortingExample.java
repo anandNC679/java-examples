@@ -19,31 +19,30 @@ public class MapSortingExample {
   
     public static void main(String args[]) {
   
-        //creating Hashtable for sorting
-        Map<String, Integer> olympic2012 = new HashMap<String, Integer>();
+        Map<String, Integer> olympicMap = new HashMap<String, Integer>();
       
-        olympic2012.put("England", 3);
-        olympic2012.put("USA", 1);
-        olympic2012.put("China", 2);
-        olympic2012.put("Russia", 4);
+        olympicMap.put("England", 3);
+        olympicMap.put("USA", 1);
+        olympicMap.put("China", 2);
+        olympicMap.put("Russia", 4);
+        olympicMap.put("India", 5);
         //olympic2012.put("Australia", 4); //adding duplicate value
       
-        //printing hashtable without sorting
-        System.out.println("Unsorted Map in Java : " + olympic2012);
+        System.out.println("Unsorted Map in Java : " + olympicMap);
       
         //sorting Map e.g. HashMap, Hashtable by keys in Java
-        Map<String, Integer> sorted = sortByKeys(olympic2012);
+        Map<String, Integer> sorted = sortByKeys(olympicMap);
         System.out.println("Sorted Map in Java by key: " + sorted);
       
       
         //sorting Map like Hashtable and HashMap by values in Java
-        sorted = sortByValues(olympic2012);
+        sorted = sortByValues(olympicMap);
         System.out.println("Sorted Map in Java by values: " + sorted);
       
       
         //Sorting Map in Java by keys using TreeMap
         Map<String, Integer> sortedMapByKeys = new TreeMap<String,Integer>();
-        sortedMapByKeys.putAll(olympic2012);
+        sortedMapByKeys.putAll(olympicMap);
         System.out.println("Sorted Map in Java by key using TreeMap : " + sortedMapByKeys);
  
       
